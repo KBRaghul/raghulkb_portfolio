@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Ensures the background stays white for your clean aesthetic */
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove the flex centering from body */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Ensure the React root fills the space */
+#root {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Simple Reset for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
