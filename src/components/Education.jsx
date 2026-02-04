@@ -2,14 +2,14 @@ const education = [
   {
     degree: "Master of Science in Computer Science",
     school: "University of Alabama at Birmingham",
-    year: "Expected Dec 2026",
-    desc: "Focused on advanced software engineering and system architecture.",
+    year: "Jan 2025 -- Dec 2026",
+    desc: "CGPA: 4.00/4.00",
   },
   {
     degree: "B.Tech in Computer Science and Engineering",
     school: "Amrita Viswa Vidyapeetham, India",
-    year: "May 2023",
-    desc: "Foundational studies in software engineering and NLP research.",
+    year: "Jul 2019 -- May 2023",
+    desc: "CGPA: 3.00/4.00",
   },
 ];
 
