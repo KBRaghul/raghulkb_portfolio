@@ -47,7 +47,7 @@ const skillGroups = [
 ];
 
 const Skills = () => (
-  <section id="skills" className="w-full py-32 bg-slate-50">
+  <section id="skills" className="w-full py-32 bg-slate-50 scroll-mt-24">
     <div className="max-w-6xl mx-auto px-6 lg:px-12">
       <h2 className="text-sm font-black mb-20 text-blue-600 uppercase tracking-[0.3em]">
         Technical Toolkit

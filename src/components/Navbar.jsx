@@ -32,7 +32,13 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
+        >
           <div className="space-y-1.5">
             <span
               className={`block w-6 h-0.5 bg-white transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}
@@ -49,7 +55,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black border-t border-slate-800 px-6 py-10 space-y-8 animate-in fade-in slide-in-from-top-4">
+        <div
+          id="mobile-menu"
+          className="md:hidden bg-black border-t border-slate-800 px-6 py-10 space-y-8 animate-in fade-in slide-in-from-top-4"
+        >
           {navLinks.map((link) => (
             <a
               key={link.name}

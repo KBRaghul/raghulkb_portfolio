@@ -1,10 +1,13 @@
+import networkTrafficDoc from "../../assets/Network_Traffic_Analysis.pdf";
+import semanticModelDoc from "../../assets/Interoperabe_Semantic_Model.pdf";
+
 const projectList = [
   {
     title: "Full-Stack Therapy Booking Platform",
     period: "Nov 2025 – Jan 2026",
     desc: "Developed a MERN stack application with PostgreSQL and RBAC. Implemented Google OAuth 2.0 and automated scheduling via Google Calendar & Meet APIs.",
     tags: ["React", "Node.js", "PostgreSQL", "OAuth 2.0"],
-    link: "#",
+    link: "https://ryyderbros-wellness.vercel.app/",
   },
   {
     title: "Responsive React Real Estate Web Page",
@@ -18,7 +21,7 @@ const projectList = [
     period: "Aug 2022 – May 2023",
     desc: "Created a Knowledge Graph using BOT and FoodOn ontologies to enable data harmonization across agricultural IoT sensors.",
     tags: ["Semantic Web", "SPARQL", "Ontologies", "IoT"],
-    link: "#",
+    link: semanticModelDoc,
   },
   {
     title: "Credit Card Fraud Detection System",
@@ -32,7 +35,7 @@ const projectList = [
     period: "Jan 2022 – May 2022",
     desc: "Implemented a socket-based Python application for reliable UDP transfer. Optimized network throughput and latency by 15% using Wireshark analysis.",
     tags: ["Python", "Networking", "Wireshark", "Socket Programming"],
-    link: "#",
+    link: networkTrafficDoc,
   },
   {
     title: "Named Entity Recognition (NER)",
@@ -44,7 +47,7 @@ const projectList = [
 ];
 
 const Projects = () => (
-  <section id="projects" className="w-full py-32 bg-white">
+  <section id="projects" className="w-full py-32 scroll-mt-24">
     <div className="max-w-6xl mx-auto px-6 lg:px-12">
       <h2 className="text-sm font-black mb-20 text-blue-600 uppercase tracking-[0.3em]">
         Technical Projects & Research
@@ -79,14 +82,20 @@ const Projects = () => (
                   </span>
                 ))}
               </div>
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] font-black uppercase tracking-widest text-slate-900 hover:text-blue-600 transition-colors"
-              >
-                View Project →
-              </a>
+              {p.link && p.link !== "#" ? (
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[10px] font-black uppercase tracking-widest text-slate-900 hover:text-red-600 transition-colors"
+                >
+                  View Project →
+                </a>
+              ) : (
+                <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+                  Private or In Progress
+                </span>
+              )}
             </div>
           </div>
         ))}

@@ -36,25 +36,38 @@ const jobs = [
 ];
 
 const Experience = () => (
-  <section id="work" className="w-full bg-slate-50 py-32">
+  <section id="work" className="w-full bg-slate-50 py-32 scroll-mt-24">
     <div className="max-w-6xl mx-auto px-6 lg:px-12">
       <h2 className="text-sm font-black mb-20 text-blue-600 uppercase tracking-[0.3em]">
         Professional Experience
       </h2>
       <div className="space-y-24">
         {jobs.map((job, i) => (
-          <div key={i} className="flex flex-col md:flex-row gap-8 md:gap-20">
+          <div
+            key={i}
+            className="relative flex flex-col md:flex-row gap-8 md:gap-20"
+          >
             {/* Left Column: Role & Date */}
             <div className="md:w-1/3">
-              <h3 className="text-2xl font-bold text-slate-900 leading-tight">
-                {job.role}
-              </h3>
-              <p className="text-slate-400 font-bold text-xs mt-2 uppercase tracking-widest">
-                {job.date}
-              </p>
-              <p className="text-slate-400 text-xs font-medium mt-1 uppercase italic">
-                {job.location}
-              </p>
+              <div className="flex items-start gap-4">
+                <div className="relative mt-2 flex flex-col items-center">
+                  <span className="h-3 w-3 rounded-full bg-red-600 ring-4 ring-red-100"></span>
+                  {i !== jobs.length - 1 && (
+                    <span className="mt-3 h-full w-px bg-slate-200"></span>
+                  )}
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 leading-tight">
+                    {job.role}
+                  </h3>
+                  <p className="text-slate-400 font-bold text-xs mt-2 uppercase tracking-widest">
+                    {job.date}
+                  </p>
+                  <p className="text-slate-400 text-xs font-medium mt-1 uppercase italic">
+                    {job.location}
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Right Column: Detailed Description */}
