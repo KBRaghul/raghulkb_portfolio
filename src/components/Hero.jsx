@@ -1,6 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
-import resumePdf from "../../assets/RaghulKB_resume.pdf";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => (
   <section id="about" className="w-full pt-40 pb-24 scroll-mt-24">
@@ -42,34 +41,12 @@ const Hero = () => (
               <Linkedin size={28} />
             </a>
             <a
-              href="mailto:raghulkb@uab.edu"
+              href="mailto:raghulkb1507@gmail.com"
               className="text-slate-400 hover:text-red-500 transition-colors"
             >
               <Mail size={28} />
             </a>
           </div>
-        </div>
-
-        {/* Right Side: Huge Resume Button */}
-        <div className="w-full lg:w-auto">
-          <a
-            href={resumePdf}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col items-center justify-center gap-4 p-12 md:p-16 border-4 border-dashed border-slate-200 rounded-3xl hover:border-red-600 hover:bg-red-50 transition-all duration-300"
-          >
-            <div className="p-6 bg-red-600 rounded-2xl text-white shadow-xl group-hover:scale-110 transition-transform">
-              <FileText size={48} />
-            </div>
-            <div className="text-center">
-              <span className="block text-2xl font-black text-slate-900 uppercase tracking-tighter font-display">
-                View Full Resume
-              </span>
-              <span className="text-sm font-bold text-slate-400 uppercase tracking-widest group-hover:text-red-600 transition-colors">
-                PDF Format
-              </span>
-            </div>
-          </a>
         </div>
       </div>
     </div>

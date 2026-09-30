@@ -17,6 +17,43 @@ const skillGroups = [
     ],
   },
   {
+    category: "Agents & Orchestration",
+    items: [
+      "LangGraph",
+      "LangChain",
+      "Agentic RAG",
+      "MCP (Model Context Protocol)",
+      "Tool Calling",
+    ],
+  },
+  {
+    category: "LLMs & Retrieval",
+    items: [
+      "RAG",
+      "Prompt Engineering",
+      "Groq / Llama",
+      "Embeddings (Sentence-Transformers)",
+      "Hugging Face",
+      "ChromaDB",
+    ],
+  },
+  {
+    category: "ML & Serving",
+    items: [
+      "FastAPI Streaming",
+      "Scikit-Learn",
+      "XGBoost",
+      "TensorFlow",
+      "PyTorch",
+      "NLP (CRF / NER)",
+      "Computer Vision",
+    ],
+  },
+  {
+    category: "AI Dev Tools",
+    items: ["Claude Code", "Codex", "GitHub Copilot"],
+  },
+  {
     category: "Cloud & DevOps",
     items: [
       "AWS (EC2, S3, DynamoDB, CodeBuild)",

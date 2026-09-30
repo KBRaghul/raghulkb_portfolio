@@ -3,6 +3,20 @@ import semanticModelDoc from "../../assets/Interoperabe_Semantic_Model.pdf";
 
 const projectList = [
   {
+    title: "Clinical Q&A Agent",
+    period: "Sep 2026",
+    desc: "Built an agentic medical Q&A system with LangGraph running multi-step RAG over PubMed abstracts in ChromaDB. An LLM relevance grader triggers a live PubMed search via a custom MCP server when local context is insufficient, served through a FastAPI streaming endpoint.",
+    tags: ["LangGraph", "RAG", "MCP", "ChromaDB", "FastAPI"],
+    link: "https://github.com/KBRaghul/clinical_q-a_agent",
+  },
+  {
+    title: "SegEarth-OV: Open-Vocabulary Remote Sensing Segmentation",
+    period: "2026 – Present",
+    desc: "Working on training-free, open-vocabulary semantic segmentation of remote sensing imagery with SegEarth-OV, using CLIP vision-language features to segment land-cover classes from text prompts without task-specific training.",
+    tags: ["Computer Vision", "PyTorch", "CLIP", "Remote Sensing"],
+    link: null,
+  },
+  {
     title: "Full-Stack Therapy Booking Platform",
     period: "Nov 2025 – Jan 2026",
     desc: "Developed a MERN stack application with PostgreSQL and RBAC. Implemented Google OAuth 2.0 and automated scheduling via Google Calendar & Meet APIs.",
@@ -28,7 +42,7 @@ const projectList = [
     period: "Aug 2022 – May 2023",
     desc: "Developed an ML pipeline handling 280,000+ transactions. Applied SMOTE and compared XGBoost and Random Forest models for high precision.",
     tags: ["Python", "Machine Learning", "Scikit-Learn", "TensorFlow"],
-    link: "#",
+    link: "https://github.com/KBRaghul/credit-card-fraud-detection",
   },
   {
     title: "Network Traffic Analysis",
@@ -42,7 +56,7 @@ const projectList = [
     period: "Jan 2022 – May 2022",
     desc: "Designed an NER system using CRF to process 29,500+ research articles from the CORD-19 dataset, achieving 93% accuracy.",
     tags: ["NLP", "Python", "CRF", "Data Science"],
-    link: "#",
+    link: "https://github.com/KBRaghul/ner-covid-research-articles",
   },
 ];
 

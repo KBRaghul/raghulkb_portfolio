@@ -5,22 +5,11 @@ const jobs = [
     role: "Application Developer",
     company: "Cimpress India (BuildASign)",
     location: "Bengaluru, India",
-    date: "Jan 2024 – Nov 2024",
+    date: "Aug 2023 – Nov 2024",
     points: [
       "Engineered responsive UI components and optimized the EasyCanvasPrints homepage for a platform with 25M+ lifetime orders.",
       "Architected full-stack optimizations across multiple brands, improving Core Web Vitals and reducing page load time by 25%.",
       "Refined data ingestion pipelines by modifying Segment API integrations and DynamoDB schemas to track complex customer behavior.",
-    ],
-  },
-  {
-    role: "QA Engineer",
-    company: "Cimpress India (BuildASign)",
-    location: "Bengaluru, India",
-    date: "Aug 2023 – Jan 2024",
-    points: [
-      "Automated ecommerce workflows using Java Selenium, validating RabbitMQ messaging and analyzing Core Web Vitals with DebugBear.",
-      "Performed API testing of Shipping and Order Tracking RESTful APIs using Swagger and Postman to improve workflow reliability.",
-      "Supported CI/CD deployments and resolved AWS production issues using Kibana logs to maintain 99.9% uptime.",
     ],
   },
   {
